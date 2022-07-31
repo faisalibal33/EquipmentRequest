@@ -1,0 +1,229 @@
+.listContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  z-index: 0;
+}
+
+.listWrapper {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  gap: 20px;
+}
+
+.listSearch {
+  flex: 2;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  position: sticky;
+  top: 140px;
+  left: 10px;
+  height: max-content;
+  border: 1px solid rgb(214, 214, 214);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.lsTitle {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.lsItem {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+.dataform {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 6px;
+  width: 100%;
+  margin-top: -15px;
+}
+
+.lsItem input {
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  width: auto;
+}
+
+.lsItem select {
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.lsItem > label {
+  font-size: 12px;
+}
+
+.lsItem > input {
+  height: 30px;
+  border: none;
+  padding: 5px;
+}
+.lsItem > span {
+  height: 30px;
+  padding: 5px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.lsOptions {
+  padding: 10px;
+}
+
+.lsOptionItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #555;
+  font-size: 12px;
+}
+
+.lsOptionInput {
+  width: 50px;
+}
+
+.listSearch > button {
+  padding: 10px;
+  border: none;
+  width: 100%;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.listResult {
+  flex: 3;
+}
+
+/* Modal */
+
+.modalBackground {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(200, 200, 200) transparent;
+  backdrop-filter: blur(5px);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3000;
+}
+
+.modalContainer {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  align-items: center;
+}
+
+.cardRequestModal {
+  /* border: 1px solid lightgray; */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 480px;
+}
+.modalContainer .ModalRequest_title {
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: fit-content;
+}
+
+.modalRequest {
+  flex: 3;
+  margin-top: 30px;
+  max-height: 200px;
+  border: 1px solid lightgray;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  /* max-width: 480px; */
+}
+
+.titleCloseBtn {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  right: 20px;
+}
+
+.titleCloseBtn button {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.modalContainer .body {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.modalContainer .footer {
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}
+
+.modalContainer .footer button {
+  width: 70px;
+  height: 35px;
+  margin: 5px;
+  border: none;
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+#cancelBtn {
+  background-color: crimson;
+}
+
+@media screen and (max-width: 952px) {
+  .dataform {
+    grid-template-columns: auto;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .listSearch {
+    position: static;
+    margin: 8px;
+  }
+  .listWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}

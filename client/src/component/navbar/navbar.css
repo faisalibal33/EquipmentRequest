@@ -1,0 +1,70 @@
+.hmnavbar {
+  background: transparent;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.hmactive {
+  background: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  z-index: 1000;
+}
+
+.navbarLink.navLinkNone {
+  opacity: 0;
+}
+
+.btactive {
+  border: 1px solid rgb(214, 214, 214);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.navbarLink {
+  opacity: 1;
+  margin-top: 21px;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.navContainer {
+  width: 100%;
+  max-width: 1024px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gmflogo {
+  height: 50px;
+  width: 200px;
+  object-fit: cover;
+}
+
+.navButton {
+  margin-left: 20px;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: #003580;
+}
+
+.profile {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.profileimg {
+  width: 30px;
+  border-radius: 100px;
+  height: 35px;
+}

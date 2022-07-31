@@ -1,0 +1,54 @@
+body {
+  background-color: #fff;
+}
+
+.homeContainer {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.boxSearch {
+  position: sticky;
+  top: 85px;
+  display: flex;
+  align-items: center;
+  width: 1024px;
+  padding: 0px;
+  height: 30px;
+  margin-top: -80px;
+  z-index: 2000;
+  background: red;
+}
+
+.spacing {
+  position: absolute;
+  top: 40px;
+  height: 15px;
+  max-width: 100%;
+  background: white;
+}
+.progressWork {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -60px;
+  gap: 30px;
+}
+
+.homework {
+  display: grid;
+  grid-template-columns: auto auto;
+  /* justify-content: center ; */
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1024px;
+}
+
+.homeTitle {
+  width: 1024px;
+  font-size: 20px;
+}
