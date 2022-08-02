@@ -10,16 +10,16 @@ export const fetchRequest = createAsyncThunk(
   "request/fetchRequest",
   async () => {
     return await axios
-      .get("http://192.168.11.203:8800/api/request")
+      .get("http://192.168.41.203:8800/api/request")
       .then((res) => res.data);
   }
 );
 export const updateRequest = createAsyncThunk(
   "request/updateRequest",
   async (value) => {
-    axios.put(`http://192.168.11.203:8800/api/request/${value.id}`, value);
+    axios.put(`http://192.168.41.203:8800/api/request/${value.id}`, value);
     return await axios
-      .get("http://192.168.11.203:8800/api/request")
+      .get("http://192.168.41.203:8800/api/request")
       .then((res) => res.data);
   }
 );

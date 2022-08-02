@@ -10,7 +10,7 @@ export const fetchEquipment = createAsyncThunk(
   "equipment/fetchEquipment",
   async () => {
     return axios
-      .get("http://192.168.11.203:8800/api/equipment")
+      .get("http://192.168.41.203:8800/api/equipment")
       .then((res) => res.data);
   }
 );

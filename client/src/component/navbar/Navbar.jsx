@@ -27,11 +27,8 @@ const Navbar = () => {
       <div className="navContainer">
         <div>
           <Link to="/" style={{ color: "inherit", textDecoration: "none" }}>
-            {navbar ? (
-              <img src={gmflogo2} alt="GMF-Aeroasia" height="35px" />
-            ) : (
-              <img src={gmflogo} alt="GMF-Aeroasia" height="125px" />
-            )}
+            {navbar && <img src={gmflogo2} alt="GMF-Aeroasia" height="35px" />}
+            {!navbar && <img src={gmflogo} alt="GMF-Aeroasia" height="125px" />}
           </Link>
         </div>
         <div className={navbar ? "navbarLink" : "navbarLink navLinkNone"}>

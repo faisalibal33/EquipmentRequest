@@ -32,9 +32,7 @@ const Dashboard = () => {
   const today = new Date().toLocaleString();
   const [idfetch, setIdfetch] = useState();
   const items = JSON.parse(localStorage.getItem("user"));
-  const { cycle } = useSelector((state) => state.cycle);
 
-  const keys = ["aircraftReg", "unit"];
   const handleClick = async (progres, idno) => {
     setIdfetch(progres);
     if (progres === "OPEN") {

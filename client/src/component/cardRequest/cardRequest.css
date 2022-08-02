@@ -144,18 +144,6 @@
   gap: 5px;
 }
 
-.openButton {
-  background-color: #c20000;
-  width: 60px;
-  font-size: 10px;
-  color: white;
-  font-weight: bold;
-  padding: 10px 5px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
 .closeButton {
   background-color: #00c21a;
   width: 60px;
